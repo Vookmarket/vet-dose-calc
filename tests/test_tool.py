@@ -20,9 +20,9 @@ def setup_data(tmp_path):
     drugs_bak = None
     products_bak = None
     if (data_dir / "drugs.yaml").exists():
-        drugs_bak = (data_dir / "drugs.yaml").read_text()
+        drugs_bak = (data_dir / "drugs.yaml").read_text(encoding="utf-8")
     if (data_dir / "products.yaml").exists():
-        products_bak = (data_dir / "products.yaml").read_text()
+        products_bak = (data_dir / "products.yaml").read_text(encoding="utf-8")
 
     # テストフィクスチャをコピー
     shutil.copy(FIXTURES / "drugs.yaml", data_dir / "drugs.yaml")
@@ -32,11 +32,11 @@ def setup_data(tmp_path):
 
     # 復元
     if drugs_bak is not None:
-        (data_dir / "drugs.yaml").write_text(drugs_bak)
+        (data_dir / "drugs.yaml").write_text(drugs_bak, encoding="utf-8")
     else:
         (data_dir / "drugs.yaml").unlink(missing_ok=True)
     if products_bak is not None:
-        (data_dir / "products.yaml").write_text(products_bak)
+        (data_dir / "products.yaml").write_text(products_bak, encoding="utf-8")
     else:
         (data_dir / "products.yaml").unlink(missing_ok=True)
 

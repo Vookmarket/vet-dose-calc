@@ -28,7 +28,7 @@ def _load_config() -> dict:
         return _CONFIG_CACHE
     config_path = Path(__file__).parent / "data" / "config.yaml"
     if config_path.exists():
-        with open(config_path) as f:
+        with open(config_path, encoding="utf-8") as f:
             _CONFIG_CACHE = yaml.safe_load(f) or {}
     else:
         _CONFIG_CACHE = {}
