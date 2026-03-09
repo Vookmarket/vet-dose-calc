@@ -1,0 +1,47 @@
+# vet-dose-calc 設定ファイル
+
+# Gemini API設定
+gemini:
+  model: "gemini-2.0-flash"
+  api_url: "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+  max_tokens: 8192
+  temperature: 0.2
+  timeout_sec: 300        # suggest最大待機時間（秒）
+  use_search_grounding: true
+  resolve_redirect_urls: true   # Search GroundingリダイレクトURLを実URLに解決
+
+# 動物種設定
+species:
+  dog:
+    label: "犬"
+    weight_min: 0.1
+    weight_max: 200.0
+  cat:
+    label: "猫"
+    weight_min: 0.1
+    weight_max: 30.0
+
+# 含有量単位（strength_unit）列挙型
+strength_units:
+  - mg/tab
+  - mg/cap
+  - mg/packet
+  - mg/ml
+  - percent
+  - iu/ml
+  - mcg/tab
+  - mg/vial
+  - mg/pipette
+  - mg/pump
+
+# 剤形（form）列挙型
+forms:
+  - tablet
+  - capsule
+  - liquid
+  - injection
+  - topical
+  - patch
+  - gel
+  - spot_on
+  - powder

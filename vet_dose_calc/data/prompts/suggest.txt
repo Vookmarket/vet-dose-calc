@@ -1,0 +1,53 @@
+あなたは獣医薬理学の専門知識を持つAIアシスタントです。
+以下の条件で、適切な薬剤候補を3〜5件提案してください。
+
+## 条件
+- 動物種: {species_ja}（{species}）
+- 症状: {symptoms}
+{weight_line}
+
+## 出力要件
+各薬剤候補について以下の情報を含めてください:
+1. 薬剤名（日本語・英語）
+2. カテゴリ（例: antiemetic, antibiotics, nsaid）
+3. 適応症
+4. 推奨用量（mg/kg）、投与頻度、投与経路、投与期間
+5. 日本で入手可能な商品名と含有量（わかる範囲で）
+6. 使用上の注意
+7. 情報の根拠（参考文献のURLがあれば）
+
+## 出力形式
+以下のJSON形式で出力してください。JSONのみを出力し、説明は不要です。
+
+```json
+{{
+  "suggestions": [
+    {{
+      "drug_name_ja": "薬剤名（日本語）",
+      "drug_name_en": "drug name (English)",
+      "category": "カテゴリ（英語小文字）",
+      "indication": "適応症",
+      "species": "{species}",
+      "dose_mg_per_kg": "用量（例: 1, 0.1-0.2）",
+      "frequency": "投与頻度（例: SID, BID, TID）",
+      "route": "投与経路（例: PO, SC, IV, IM）",
+      "duration": "投与期間（例: 7日, 最大5日間）",
+      "products": [
+        {{"brand": "商品名", "strength": 数値, "strength_unit": "mg/tab"}}
+      ],
+      "warnings": ["注意事項1", "注意事項2"],
+      "references": [
+        {{"title": "参考文献タイトル", "url": "URL"}}
+      ],
+      "confidence": "high/medium/low"
+    }}
+  ]
+}}
+```
+
+## 重要な注意
+- 用量は獣医学的に一般的に認められた範囲を提示してください
+- 不確実な情報には confidence: "low" を設定してください
+- 猫に禁忌の薬剤（ペルメトリン、アセトアミノフェン等）は猫への提案に含めないでください
+- 商品が不明な場合は products を空配列にしてください
+- strength_unit は以下のいずれか: mg/tab, mg/cap, mg/packet, mg/ml, percent, iu/ml, mcg/tab, mg/vial, mg/pipette, mg/pump

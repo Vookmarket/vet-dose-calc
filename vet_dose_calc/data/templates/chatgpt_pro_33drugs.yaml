@@ -1,0 +1,1118 @@
+drugs:
+- name: アモキシシリン/クラブラン酸
+  aliases:
+  - amoxicillin/clavulanate
+  category: antibiotics
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 一般感染症
+        dose_mg_per_kg: 12.5-25
+        frequency: q8-12h
+        route: PO
+        duration: 7-14日
+        notes: 皮膚・軟部組織感染では通常BID。深部感染はより長期。
+      warnings:
+      - 消化器症状に注意。βラクタム過敏症例では回避。
+    cat:
+      indications:
+      - indication: 一般感染症
+        dose_mg_per_kg: 12.5-20
+        frequency: q12h
+        route: PO
+        duration: 7-14日
+        notes: 猫では62.5 mg/頭 BIDの実用投与も一般的。
+      warnings:
+      - 消化器症状に注意。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Dosages of Penicillins'
+  - 'FDA FOI Summary: CLAVAMOX'
+- name: セファレキシン
+  aliases:
+  - cephalexin
+  category: antibiotics
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 皮膚・軟部組織感染症
+        dose_mg_per_kg: 15-30
+        frequency: q12h
+        route: PO
+        duration: 7-14日
+        notes: 表在性膿皮症では21-42日など長期化することがある。
+      warnings:
+      - 消化器症状に注意。腎機能低下では慎重投与。
+    cat:
+      indications:
+      - indication: 皮膚・軟部組織感染症
+        dose_mg_per_kg: 15-30
+        frequency: q12h
+        route: PO
+        duration: 7-14日
+        notes: 猫ではq12-24hが使われることもある。
+      warnings:
+      - 消化器症状に注意。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Dosages of Cephalosporins'
+  - 'Merck Veterinary Manual: Dosages of Antistaphylococcal Antimicrobials'
+- name: セフォベシン
+  aliases:
+  - cefovecin
+  category: antibiotics
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 皮膚・軟部組織感染症
+        dose_mg_per_kg: '8'
+        frequency: single dose; may repeat q14d
+        route: SC
+        duration: 14日相当
+        notes: 必要に応じて14日後に再投与。通常2回まで。
+      warnings:
+      - 長時間作用型。副作用出現時に中止しても速やかに消失しない。
+    cat:
+      indications:
+      - indication: 皮膚・軟部組織感染症
+        dose_mg_per_kg: '8'
+        frequency: single dose
+        route: SC
+        duration: 14日相当
+        notes: 猫の膿瘍・創傷感染で頻用。
+      warnings:
+      - 長時間作用型。注射後の有害反応は持続しうる。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Dosages of Cephalosporins'
+  - 'FDA FOI Summary: CONVENIA'
+- name: ドキシサイクリン
+  aliases:
+  - doxycycline
+  category: antibiotics
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 呼吸器感染症・ベクター媒介感染症
+        dose_mg_per_kg: '5'
+        frequency: q12h
+        route: PO
+        duration: 7-28日
+        notes: 10 mg/kg q24hでも用いられる。
+      warnings:
+      - 食道刺激は比較的少ないが消化器症状に注意。
+    cat:
+      indications:
+      - indication: 呼吸器感染症・ヘモプラズマ/クラミジア等
+        dose_mg_per_kg: '5'
+        frequency: q12h
+        route: PO
+        duration: 7-28日
+        notes: 10 mg/kg q24hでも用いられる。固形剤投与後は必ず水または食餌を与え、食道炎/狭窄を予防する。
+      warnings:
+      - 固形剤単独投与で食道障害リスク。投与後に給水/給餌必須。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Tetracyclines Use in Animals'
+  - 'Merck Veterinary Manual: Rocky Mountain Spotted Fever in Dogs'
+- name: メトロニダゾール
+  aliases:
+  - metronidazole
+  category: antibiotics
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 炎症性腸疾患/嫌気性感染
+        dose_mg_per_kg: 10-15
+        frequency: q12h
+        route: PO
+        duration: 5-14日
+        notes: Giardiaでは25 mg/kg q12h × 5日が代表的。
+      warnings:
+      - 高用量・長期で神経毒性。肝機能低下では減量。
+    cat:
+      indications:
+      - indication: 炎症性腸疾患/嫌気性感染
+        dose_mg_per_kg: 10-15
+        frequency: q12h
+        route: PO
+        duration: 5-14日
+        notes: Giardiaでは25 mg/kg q12h × 5日が代表的。
+      warnings:
+      - 高用量・長期で神経毒性。肝機能低下では減量。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Nitroimidazoles Use in Animals'
+  - 'Merck Veterinary Manual: Drugs Used for Inflammatory Bowel Disease'
+- name: マロピタント
+  aliases:
+  - maropitant
+  category: antiemetic
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 急性嘔吐
+        dose_mg_per_kg: '1'
+        frequency: q24h
+        route: SC/IV
+        duration: 1-5日
+        notes: 経口では2 mg/kg q24hが一般的。
+      - indication: 乗り物酔い予防
+        dose_mg_per_kg: '8'
+        frequency: q24h
+        route: PO
+        duration: 最大2日
+        notes: 投与1時間前、絶食条件で用いる。
+      warnings:
+      - IV急速投与で低血圧の報告。SC投与は疼痛あり。ABCB1変異犬で注意。
+    cat:
+      indications:
+      - indication: 急性嘔吐
+        dose_mg_per_kg: '1'
+        frequency: q24h
+        route: SC/IV
+        duration: 1-5日
+        notes: 経口投与は地域により適応外。
+      warnings:
+      - SC投与時の疼痛に注意。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Antiemetic Drugs'
+  - 'FDA FOI Summary: CERENIA Injectable'
+  - 'FDA FOI Summary: CERENIA Tablets'
+- name: オンダンセトロン
+  aliases:
+  - ondansetron
+  category: antiemetic
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 悪心・嘔吐
+        dose_mg_per_kg: 0.1-0.2
+        frequency: q12h
+        route: PO
+        duration: 必要期間
+        notes: IVでは0.1-0.15 mg/kg q8-12hが代表的。
+      warnings:
+      - 便秘、まれに徐脈/QT延長に注意。
+    cat:
+      indications:
+      - indication: 悪心・嘔吐
+        dose_mg_per_kg: 0.1-0.2
+        frequency: q12h
+        route: PO
+        duration: 必要期間
+        notes: IVでは0.1-0.15 mg/kg q8-12hが代表的。
+      warnings:
+      - 便秘、まれに徐脈/QT延長に注意。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Antiemetic Drugs'
+  - 'Merck Veterinary Manual: Toxicoses From Human Analgesics in Animals'
+- name: オメプラゾール
+  aliases:
+  - omeprazole
+  category: gastroprotectant
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 胃潰瘍・酸関連疾患
+        dose_mg_per_kg: 0.5-1
+        frequency: q24h
+        route: PO
+        duration: 3-14日
+        notes: 強い酸分泌抑制が必要なら0.5-1.5 mg/kg q12h。
+      warnings:
+      - 長期投与は適応を吟味。スクラルファート等との投与タイミングに注意。
+    cat:
+      indications:
+      - indication: 胃潰瘍・酸関連疾患
+        dose_mg_per_kg: 0.5-1
+        frequency: q24h
+        route: PO
+        duration: 3-14日
+        notes: 強い酸分泌抑制が必要なら0.5-1.5 mg/kg q12h。
+      warnings:
+      - 長期投与は適応を吟味。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Antiulcerative Drugs'
+  - 'Merck Veterinary Manual: Gastritis in Small Animals'
+  - 'ACVIM Consensus: Rational Use of GI Protectants'
+- name: プレドニゾロン
+  aliases:
+  - prednisolone
+  category: corticosteroid
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 抗炎症
+        dose_mg_per_kg: 0.5-1
+        frequency: q24h
+        route: PO
+        duration: 5-7日後に漸減
+        notes: 重症炎症では2 mg/kg q24hまで用いることがある。
+      - indication: 免疫抑制
+        dose_mg_per_kg: 2-2.2
+        frequency: q24h
+        route: PO
+        duration: 反応後に漸減
+        notes: 重症例ではさらに高用量が必要なことがある。
+      warnings:
+      - 長期投与で多飲多尿、筋萎縮、糖尿病、感染リスク増加。NSAIDsとの併用回避。
+    cat:
+      indications:
+      - indication: 抗炎症
+        dose_mg_per_kg: 1-2
+        frequency: q24h
+        route: PO
+        duration: 5-7日後に漸減
+        notes: 猫ではprednisoneよりprednisoloneを優先。
+      - indication: 免疫抑制
+        dose_mg_per_kg: '4.4'
+        frequency: q24h
+        route: PO
+        duration: 反応後に漸減
+        notes: 実臨床では2-4 mg/kg/日で開始することもある。
+      warnings:
+      - 長期投与で糖尿病、感染、心不全増悪に注意。NSAIDsとの併用回避。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Hormonal Treatment for Integumentary Disease in Animals'
+  - 'Merck Veterinary Manual: Drugs Used to Treat Inflammatory Bowel Disease in Monogastric
+    Animals'
+- name: メロキシカム
+  aliases:
+  - meloxicam
+  category: nsaid
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 術後痛・変形性関節症
+        dose_mg_per_kg: '0.1'
+        frequency: q24h
+        route: PO/SC/IV
+        duration: 必要最短期間
+        notes: 初回0.2 mg/kg loading後、0.1 mg/kg q24hが代表的。
+      warnings:
+      - 脱水・低血圧・腎障害時は回避。ステロイド/他NSAID併用不可。
+    cat:
+      indications:
+      - indication: 術後痛
+        dose_mg_per_kg: '0.1'
+        frequency: single dose or q24h short-term
+        route: SC/PO
+        duration: 単回〜短期
+        notes: 米国では猫の反復投与はラベル外。慢性疼痛では0.01-0.05 mg/kg q24hの低用量が使われることがある。
+      warnings:
+      - 猫では反復投与で腎障害リスクが高く、国により承認差あり。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Nonsteroidal Anti-inflammatory Drugs in Animals'
+  - 'Merck Veterinary Manual: NSAIDs Used for Pain Management in Dogs and Cats'
+  - 'FDA Label: Metacam Oral Suspension'
+- name: ロベナコキシブ
+  aliases:
+  - robenacoxib
+  category: nsaid
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 術後痛・筋骨格系疼痛
+        dose_mg_per_kg: 1-2
+        frequency: q24h
+        route: PO/SC
+        duration: 3-6日または必要最短期間
+        notes: 犬の経口は地域により承認差あり。
+      warnings:
+      - 脱水・低血圧・腎障害時は回避。ステロイド/他NSAID併用不可。
+    cat:
+      indications:
+      - indication: 術後痛
+        dose_mg_per_kg: '2'
+        frequency: q24h
+        route: SC
+        duration: 最大3日
+        notes: 経口は1 mg/kg q24h。
+      - indication: 急性筋骨格系疼痛
+        dose_mg_per_kg: '1'
+        frequency: q24h
+        route: PO
+        duration: 最大3-6日
+        notes: 国・製剤により適応差あり。
+      warnings:
+      - 猫では短期使用が原則。腎機能・水和に注意。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: NSAIDs Used for Pain Management in Dogs and Cats'
+  - 'FDA FOI Summary: ONSIOR Tablets for Cats'
+- name: ガバペンチン
+  aliases:
+  - gabapentin
+  category: analgesic_adjuvant
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 慢性痛・神経障害性疼痛
+        dose_mg_per_kg: 10-20
+        frequency: q8-12h
+        route: PO
+        duration: 必要期間
+        notes: 開始は低用量から。中止時は漸減。
+      warnings:
+      - 鎮静・後躯失調。腎機能低下で減量。キシリトール含有液剤は犬で禁忌。
+    cat:
+      indications:
+      - indication: 慢性痛・神経障害性疼痛
+        dose_mg_per_kg: 5-10
+        frequency: q8-12h
+        route: PO
+        duration: 必要期間
+        notes: 個体差が大きく、10 mg/kg前後から開始が一般的。
+      - indication: 来院前不安軽減
+        dose_mg_per_kg: 20-30
+        frequency: single dose 2-3h before visit
+        route: PO
+        duration: 単回
+        notes: 鎮静を伴う。
+      warnings:
+      - 鎮静・運動失調に注意。腎機能低下で減量。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Selected Analgesics for Use in Dogs'
+  - 'Merck Veterinary Manual: Behavior Problems of Cats'
+  - 'Merck Veterinary Manual: Analgesics Used in Animals'
+- name: ブプレノルフィン
+  aliases:
+  - buprenorphine
+  category: opioid
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 急性疼痛
+        dose_mg_per_kg: 0.005-0.02
+        frequency: q6-12h
+        route: IV/IM
+        duration: 必要期間
+        notes: 一部施設では経粘膜投与も使用。
+      warnings:
+      - 鎮静、徐脈、食欲低下。規制薬物。
+    cat:
+      indications:
+      - indication: 急性疼痛
+        dose_mg_per_kg: 0.01-0.03
+        frequency: q6-12h
+        route: IV/IM/OTM
+        duration: 必要期間
+        notes: 猫では口腔粘膜投与(OTM)が実用的。
+      warnings:
+      - 鎮静、散瞳、食欲低下。規制薬物。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Opioids Used in Emergency Practice'
+  - 'Merck Veterinary Manual: Analgesic Pharmacology'
+- name: フロセミド
+  aliases:
+  - furosemide
+  category: diuretic
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: うっ血性心不全（維持）
+        dose_mg_per_kg: 1-2
+        frequency: q12h
+        route: PO
+        duration: 長期
+        notes: 必要に応じて1-6 mg/kg q8-12hまで調整。
+      - indication: 肺水腫・急性うっ血（急性期）
+        dose_mg_per_kg: 2-4
+        frequency: q1-6h
+        route: IV/IM/SC
+        duration: 急性期のみ
+        notes: CRI 0.25-1 mg/kg/hも用いられる。
+      warnings:
+      - 脱水、低K血症、腎前性窒素血症に注意。
+    cat:
+      indications:
+      - indication: うっ血性心不全（維持）
+        dose_mg_per_kg: 1-2
+        frequency: q12-24h
+        route: PO
+        duration: 長期
+        notes: 最大12 mg/kg/日まで。
+      - indication: 肺水腫・胸水（急性期）
+        dose_mg_per_kg: 0.5-2
+        frequency: q1-8h
+        route: IV/IM/SC
+        duration: 急性期のみ
+        notes: CRI 0.25-0.6 mg/kg/hも用いられる。
+      warnings:
+      - 脱水、低K血症、腎機能悪化に注意。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Commonly Used Cardiovascular Drugs and Dosages'
+  - 'Merck Veterinary Manual: Heart Failure in Dogs and Cats'
+- name: ピモベンダン
+  aliases:
+  - pimobendan
+  category: inodilator
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 僧帽弁閉鎖不全/CHF
+        dose_mg_per_kg: 0.25-0.3
+        frequency: q12h
+        route: PO
+        duration: 長期
+        notes: 総日量0.5-0.6 mg/kg/日。Stage B2でも用いる。空腹時投与が望ましい。
+      warnings:
+      - 左室流出路狭窄がある症例では慎重投与。
+    cat:
+      indications:
+      - indication: 心筋症/CHF（適応外）
+        dose_mg_per_kg: '0.25'
+        frequency: q12h
+        route: PO
+        duration: 長期
+        notes: 猫では適応外使用。動的左室流出路狭窄では慎重。
+      warnings:
+      - 猫では適応外使用。閉塞性HCMでは慎重。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Cardiac Medications of Dogs and Cats'
+  - 'FDA FOI Summary: Vetmedin'
+- name: アムロジピン
+  aliases:
+  - amlodipine
+  category: antihypertensive
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 全身性高血圧
+        dose_mg_per_kg: 0.1-0.2
+        frequency: q12h
+        route: PO
+        duration: 長期
+        notes: 0.2-0.4 mg/kg q24hでも用いられる。
+      warnings:
+      - 過度の血圧低下、歯肉過形成に注意。
+    cat:
+      indications:
+      - indication: 全身性高血圧
+        dose_mg_per_kg: 0.125-0.25
+        frequency: q24h
+        route: PO
+        duration: 長期
+        notes: 猫の第一選択。低用量から開始して漸増。
+      warnings:
+      - 血圧低下、食欲低下、まれに歯肉過形成。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Vasoactive Drugs for Use in Animals'
+  - 'ACVIM Consensus Statement: Systemic Hypertension in Dogs and Cats'
+  - ISFM Consensus Guidelines on Hypertension in Cats
+- name: メチマゾール
+  aliases:
+  - methimazole
+  category: antithyroid
+  source: template_imported
+  species_data:
+    dog:
+      indications: []
+      warnings:
+      - 犬での routine use は通常行わない。犬の甲状腺機能亢進はまれで、原因精査が優先。
+    cat:
+      indications:
+      - indication: 甲状腺機能亢進症
+        dose_mg_per_kg: ''
+        frequency: q12h
+        route: PO/transdermal
+        duration: 長期
+        notes: 2-3週ごとにT4と臨床症状で調整。最大20 mg/日、1回10 mgを超えない。
+      warnings:
+      - 食欲不振、嘔吐、掻痒、血液異常、肝障害に注意。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Hyperthyroidism in Animals'
+  - 'FDA FOI Summary: FELIMAZOLE'
+- name: レボチロキシン
+  aliases:
+  - levothyroxine
+  category: thyroid_hormone
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 甲状腺機能低下症
+        dose_mg_per_kg: 0.02-0.022
+        frequency: q24h
+        route: PO
+        duration: 生涯
+        notes: q12h分割投与も可。空腹時投与が望ましい。
+      warnings:
+      - 心疾患併発例では少量から。
+    cat:
+      indications:
+      - indication: 甲状腺機能低下症（まれ）
+        dose_mg_per_kg: 0.02-0.022
+        frequency: q24h
+        route: PO
+        duration: 長期
+        notes: 猫では稀。医原性/先天性などに限る。
+      warnings:
+      - 猫での適応はまれ。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Hypothyroidism in Animals'
+- name: インスリン製剤（グラルギン/プロタミン亜鉛/レンテ）
+  aliases:
+  - insulin preparations (glargine/protamine zinc/lente)
+  category: insulin
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 糖尿病（レンテ/porcine zinc insulinが一般的）
+        dose_mg_per_kg: ''
+        frequency: q12h
+        route: SC
+        duration: 長期
+        notes: AAHA推奨の実用開始量。Vetsulinラベル初期は0.5 U/kg q24hだが、実臨床ではBIDが一般的。食事時/食後投与。
+      warnings:
+      - 低血糖に注意。製剤間で濃度(U-40/U-100)が異なる。
+    cat:
+      indications:
+      - indication: 糖尿病（グラルギン）
+        dose_mg_per_kg: ''
+        frequency: q12h
+        route: SC
+        duration: 長期
+        notes: 新規糖尿病猫の第一選択候補。通常3 U/回を超えて開始しない。
+      - indication: 糖尿病（PZI）
+        dose_mg_per_kg: ''
+        frequency: q12h
+        route: SC
+        duration: 長期
+        notes: PZIも猫の第一選択候補。
+      warnings:
+      - 低血糖に注意。食欲不安定時は用量調整。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: true
+  references:
+  - 'Merck Veterinary Manual: Diabetes Mellitus in Dogs and Cats'
+  - AAHA Diabetes Management Guidelines for Dogs and Cats
+  - AAFP Diabetes Toolkit
+- name: オクラシチニブ
+  aliases:
+  - oclacitinib
+  category: antipruritic
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: アレルギー性掻痒/アトピー性皮膚炎
+        dose_mg_per_kg: 0.4-0.6
+        frequency: q12h for 14 days, then q24h
+        route: PO
+        duration: 長期可
+        notes: 12か月齢未満では通常使用しない。
+      warnings:
+      - 重度感染症、寄生虫症、腫瘍症例では慎重。
+    cat:
+      indications:
+      - indication: アレルギー性掻痒（適応外）
+        dose_mg_per_kg: 0.7-1.2
+        frequency: q12h
+        route: PO
+        duration: 短期〜中期
+        notes: 猫では適応外。文献上0.6-1.0 mg/kg q12h前後が多い。
+      warnings:
+      - 猫では適応外。感染症・トキソプラズマ等の日和見感染に注意。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'FDA FOI Summary: APOQUEL'
+  - 'Merck Veterinary Manual: Select Therapeutic Agents for Atopic Dermatitis'
+  - 'Merck Veterinary Manual: Immunomodulators for Integumentary Disease in Animals'
+- name: セラメクチン
+  aliases:
+  - selamectin
+  category: antiparasitic
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: ノミ・耳ダニ・フィラリア予防
+        dose_mg_per_kg: '6'
+        frequency: monthly
+        route: topical
+        duration: 継続
+        notes: 体重別スポットオン製剤で投与。
+      warnings:
+      - イヌ用製剤を猫へ転用しない。皮膚反応に注意。
+    cat:
+      indications:
+      - indication: ノミ・耳ダニ・フィラリア予防
+        dose_mg_per_kg: '6'
+        frequency: monthly
+        route: topical
+        duration: 継続
+        notes: 体重別スポットオン製剤で投与。
+      warnings:
+      - 皮膚反応に注意。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'FDA FOI Summary: selamectin (Revolution/Revolt)'
+  - 'Merck Veterinary Manual: Ectoparasiticides Used in Small Animals'
+- name: モキシデクチン
+  aliases:
+  - moxidectin
+  category: antiparasitic
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: フィラリア・消化管寄生虫予防（配合剤）
+        dose_mg_per_kg: '2.5'
+        frequency: monthly
+        route: topical
+        duration: 継続
+        notes: 通常はイミダクロプリドとの配合製剤として使用。疥癬/毛包虫でq1-4週の適応外使用あり。
+      warnings:
+      - MDR1変異犬・高用量使用で神経症状に注意。通常は配合製剤。
+    cat:
+      indications:
+      - indication: フィラリア・消化管寄生虫予防（配合剤）
+        dose_mg_per_kg: '1'
+        frequency: monthly
+        route: topical
+        duration: 継続
+        notes: 通常はイミダクロプリドとの配合製剤として使用。
+      warnings:
+      - 通常は配合製剤。皮膚反応に注意。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'FDA FOI Summary: Advantage Multi for Dogs'
+  - 'FDA FOI Summary: Advantage Multi for Cats'
+  - 'Merck Veterinary Manual: Drugs for Intestinal Helminths of Dogs/Cats'
+- name: ミルベマイシンオキシム
+  aliases:
+  - milbemycin oxime
+  category: antiparasitic
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: フィラリア・消化管寄生虫予防
+        dose_mg_per_kg: '0.5'
+        frequency: monthly
+        route: PO
+        duration: 継続
+        notes: 毛包虫では0.5-1 mg/kg/日など適応外使用あり。
+      warnings:
+      - MDR1変異犬・高用量で神経症状に注意。
+    cat:
+      indications:
+      - indication: フィラリア・消化管寄生虫予防
+        dose_mg_per_kg: '2'
+        frequency: monthly
+        route: PO
+        duration: 継続
+        notes: 製剤によりプラジクアンテル配合あり。
+      warnings:
+      - 高用量では神経症状に注意。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'FDA FOI Summary: Interceptor for Dogs'
+  - 'FDA FOI Summary: Interceptor for Cats'
+  - 'Merck Veterinary Manual: Drugs for Intestinal Helminths of Dogs/Cats'
+- name: フルララネル
+  aliases:
+  - fluralaner
+  category: antiparasitic
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: ノミ・マダニ予防
+        dose_mg_per_kg: '25'
+        frequency: every 12 weeks
+        route: PO
+        duration: 継続
+        notes: 1か月製剤は10 mg/kg monthly。標準的Bravecto chewは12週毎。
+      warnings:
+      - イソオキサゾリン系。既往に痙攣がある症例では慎重。
+    cat:
+      indications:
+      - indication: ノミ・マダニ予防
+        dose_mg_per_kg: '40'
+        frequency: every 12 weeks
+        route: topical
+        duration: 継続
+        notes: 猫では通常トピカル製剤。
+      warnings:
+      - イソオキサゾリン系。既往に痙攣がある症例では慎重。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'FDA FOI Summary: BRAVECTO chewables/topical'
+  - 'Merck Veterinary Manual: Ectoparasiticides Used in Small Animals'
+- name: アフォキソラネル
+  aliases:
+  - afoxolaner
+  category: antiparasitic
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: ノミ・マダニ予防
+        dose_mg_per_kg: '2.5'
+        frequency: monthly
+        route: PO
+        duration: 継続
+        notes: 通常は単剤またはmoxidectin/pyrantelとの配合製剤。
+      warnings:
+      - イソオキサゾリン系。既往に痙攣がある症例では慎重。
+    cat:
+      indications: []
+      warnings:
+      - 猫では承認単剤製剤なし。通常使用しない。猫の類薬はesafoxolaner含有配合剤。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'FDA FOI Summary: NEXGARD'
+  - 'FDA FOI Summary: NEXGARD PLUS'
+- name: サロラネル
+  aliases:
+  - sarolaner
+  category: antiparasitic
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: ノミ・マダニ予防
+        dose_mg_per_kg: '2'
+        frequency: monthly
+        route: PO
+        duration: 継続
+        notes: 通常は単剤またはmoxidectin/pyrantelとの配合製剤。
+      warnings:
+      - イソオキサゾリン系。既往に痙攣がある症例では慎重。
+    cat:
+      indications:
+      - indication: 'ノミ・マダニ予防（配合剤: セラメクチン/サロラネル）'
+        dose_mg_per_kg: '1'
+        frequency: monthly
+        route: topical
+        duration: 継続
+        notes: 猫では通常selamectinとの配合剤として使用。
+      warnings:
+      - 猫では単剤製剤ではなく配合剤が一般的。イソオキサゾリン系注意。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'FDA FOI Summary: SIMPARICA'
+  - 'FDA FOI Summary: Revolution PLUS'
+- name: プラジクアンテル
+  aliases:
+  - praziquantel
+  category: antiparasitic
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 条虫駆除
+        dose_mg_per_kg: '5'
+        frequency: single dose
+        route: PO
+        duration: 1回
+        notes: 5-10 mg/kgの範囲で用いられる。再感染予防にノミ対策が重要。
+      warnings:
+      - 再感染しやすいためノミ対策併用。
+    cat:
+      indications:
+      - indication: 条虫駆除
+        dose_mg_per_kg: 5-10
+        frequency: single dose
+        route: PO
+        duration: 1回
+        notes: IM/SCでは5-10 mg/kg単回の記載もある。
+      warnings:
+      - 再感染しやすいためノミ対策併用。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Drugs for Intestinal Helminths of Dogs/Cats'
+  - 'FDA FOI Summary: praziquantel tablets'
+- name: フェンベンダゾール
+  aliases:
+  - fenbendazole
+  category: antiparasitic
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 腸管線虫
+        dose_mg_per_kg: '50'
+        frequency: q24h
+        route: PO
+        duration: 3日
+        notes: Giardiaや慢性腸症では3-5日、猫では5-7日まで用いることがある。
+      - indication: ジアルジア症
+        dose_mg_per_kg: '50'
+        frequency: q24h
+        route: PO
+        duration: 5日
+        notes: 教科書的には3-10日の幅。
+      warnings:
+      - 条虫には無効。
+    cat:
+      indications:
+      - indication: 腸管線虫/ジアルジア症
+        dose_mg_per_kg: '50'
+        frequency: q24h
+        route: PO
+        duration: 3-5日
+        notes: Giardiaでは5-7日が一般的。
+      warnings:
+      - 条虫には無効。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Drugs for Intestinal Helminths of Dogs'
+  - 'Merck Veterinary Manual: Giardiasis in Animals'
+  - ABCD Guidelines on Giardiasis in Cats
+- name: テルミサルタン
+  aliases:
+  - telmisartan
+  category: angiotensin_receptor_blocker
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 蛋白尿（糸球体疾患）
+        dose_mg_per_kg: '1'
+        frequency: q24h
+        route: PO
+        duration: 長期
+        notes: 反応不十分なら0.5 mg/kgずつ増量し、最大2 mg/kg q24h。
+      warnings:
+      - 低血圧、腎機能悪化、高K血症に注意。
+    cat:
+      indications:
+      - indication: CKD関連蛋白尿
+        dose_mg_per_kg: '1'
+        frequency: q24h
+        route: PO
+        duration: 長期
+        notes: 猫CKDの蛋白尿で頻用。
+      - indication: 全身性高血圧
+        dose_mg_per_kg: 1.5-2
+        frequency: q12h for 14 days, then q24h
+        route: PO
+        duration: 長期
+        notes: 高血圧ラベルでは1.5 mg/kg BID 14日後に2 mg/kg SID。低血圧時は減量。
+      warnings:
+      - 低血圧、腎機能悪化、高K血症、消化器症状に注意。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Angiotensin II Receptor Antagonists for Use in Animals'
+  - 'FDA FOI Summary: SEMINTRA'
+  - 'Merck Veterinary Manual: Renal Dysfunction in Dogs and Cats'
+- name: シサプリド
+  aliases:
+  - cisapride
+  category: prokinetic
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 胃内容停滞・便秘・術後イレウス
+        dose_mg_per_kg: 0.1-0.5
+        frequency: q8-12h
+        route: PO
+        duration: 必要期間
+        notes: 犬では最大1 mg/kgまで用いられることがある。
+      warnings:
+      - 機械的閉塞が疑われる症例では禁忌。QT延長やCYP阻害薬との相互作用に注意。
+    cat:
+      indications:
+      - indication: 慢性便秘/巨大結腸
+        dose_mg_per_kg: '1.5'
+        frequency: q12h
+        route: PO
+        duration: 必要期間
+        notes: 文献上PKに基づく推奨。実臨床では2.5-5 mg/頭 q8-12hでも用いられる。
+      warnings:
+      - 機械的閉塞が疑われる症例では禁忌。QT延長やマクロライド/アゾール系との相互作用に注意。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Gastrointestinal Prokinetic Drugs Used in Monogastric
+    Animals'
+  - 'Merck Veterinary Manual: Constipation, Obstipation, and Megacolon in Small Animals'
+  - Trepanier 2010 review on acute vomiting in cats
+- name: ミルタザピン
+  aliases:
+  - mirtazapine
+  category: appetite_stimulant
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 食欲刺激
+        dose_mg_per_kg: ''
+        frequency: q24h
+        route: PO
+        duration: 必要期間
+        notes: 犬では体重帯ごとの固定用量が一般的。
+      warnings:
+      - 鎮静または興奮、発声、セロトニン症候群に注意。
+    cat:
+      indications:
+      - indication: 食欲刺激（経口）
+        dose_mg_per_kg: ''
+        frequency: q48-72h
+        route: PO
+        duration: 必要期間
+        notes: CKD猫ではq48-72hが使いやすい。
+      - indication: 食欲刺激（経皮）
+        dose_mg_per_kg: ''
+        frequency: q24h
+        route: transdermal
+        duration: 必要期間
+        notes: 耳介内側に塗布。
+      warnings:
+      - 発声、落ち着きのなさ、セロトニン症候群に注意。SSRI/MAOI併用注意。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Drugs Used to Stimulate Appetite'
+  - 'FDA FOI Summary: MIRATAZ'
+- name: クロピドグレル
+  aliases:
+  - clopidogrel
+  category: antithrombotic
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 血栓塞栓予防
+        dose_mg_per_kg: 1.1-3
+        frequency: q24h
+        route: PO
+        duration: 長期
+        notes: 臨床状況によりaspirinやDOACと併用されることがある。
+      warnings:
+      - 出血リスク、消化器症状に注意。周術期は中止時期を検討。
+    cat:
+      indications:
+      - indication: 動脈血栓塞栓症予防
+        dose_mg_per_kg: ''
+        frequency: q24h
+        route: PO
+        duration: 長期
+        notes: 猫のATE再発予防の第一選択候補。
+      warnings:
+      - 出血リスク、食欲低下/嘔吐に注意。周術期は中止時期を検討。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'Merck Veterinary Manual: Antithrombotic Drugs'
+  - 'Merck Veterinary Manual: Principles of Therapy of Cardiovascular Disease in Animals'
+- name: トリロスタン
+  aliases:
+  - trilostane
+  category: adrenocortical_enzyme_inhibitor
+  source: template_imported
+  species_data:
+    dog:
+      indications:
+      - indication: 副腎皮質機能亢進症
+        dose_mg_per_kg: 2.2-6.7
+        frequency: q24h
+        route: PO
+        duration: 長期
+        notes: 食事とともに投与。実臨床では1-2 mg/kg q12hへ分割することも多い。
+      warnings:
+      - 低Na/高K、食欲不振、嘔吐、医原性Addison病に注意。
+    cat:
+      indications: []
+      warnings:
+      - 猫ではまれな適応外使用。反応は不均一で、専門管理が望ましい。
+  safety_flags:
+    cat_contraindicated: false
+    narrow_therapeutic_index: false
+  references:
+  - 'FDA FOI Summary: VETORYL'
+  - 'Merck Veterinary Manual: Cushing Disease / Hyperadrenocorticism in Animals'

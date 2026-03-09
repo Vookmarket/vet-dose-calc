@@ -1,0 +1,50 @@
+products:
+  - brand: クラバモックス小型犬用
+    drug: アモキシシリン/クラブラン酸
+    strength: 62.5
+    strength_unit: mg/tab
+    form: tablet
+    divisible: true
+    min_division: 0.5
+    source: user_registered
+    notes: ""
+
+  - brand: クラバモックス大型犬用
+    drug: アモキシシリン/クラブラン酸
+    strength: 250
+    strength_unit: mg/tab
+    form: tablet
+    divisible: true
+    min_division: 0.25
+    source: user_registered
+    notes: ""
+
+  - brand: クラバモックスドライシロップ
+    drug: アモキシシリン/クラブラン酸
+    strength: 62.5
+    strength_unit: mg/ml
+    form: liquid
+    divisible: false
+    min_division:
+    source: user_registered
+    notes: "調製後14日以内に使用"
+
+  - brand: テストインスリン
+    drug: インスリン
+    strength: 100
+    strength_unit: iu/ml
+    form: injection
+    divisible: false
+    min_division:
+    source: user_registered
+    notes: ""
+
+  - brand: テスト外用液2%
+    drug: テスト外用薬
+    strength: 2
+    strength_unit: percent
+    form: liquid
+    divisible: false
+    min_division:
+    source: user_registered
+    notes: ""

@@ -1,0 +1,74 @@
+drugs:
+  - name: アモキシシリン/クラブラン酸
+    aliases: [アモキシシリン, AMPC/CVA, amoxicillin/clavulanate, クラバモックス]
+    category: antibiotics
+    source: user_registered
+    species_data:
+      dog:
+        indications:
+          - indication: 一般感染症
+            dose_mg_per_kg: "12.5-25"
+            frequency: BID
+            route: PO
+            duration: "7-14日"
+            notes: ""
+        warnings: []
+      cat:
+        indications:
+          - indication: 一般感染症
+            dose_mg_per_kg: "12.5-20"
+            frequency: BID
+            route: PO
+            duration: "7-14日"
+            notes: "猫では62.5mg/頭BIDの実用投与も一般的"
+        warnings: []
+    safety_flags:
+      cat_contraindicated: false
+      narrow_therapeutic_index: false
+    references: []
+
+  - name: ジゴキシン
+    aliases: [digoxin]
+    category: cardiovascular
+    source: user_registered
+    species_data:
+      dog:
+        indications:
+          - indication: 心房細動
+            dose_mg_per_kg: "0.005-0.008"
+            frequency: BID
+            route: PO
+            duration: "長期"
+            notes: "血中濃度モニタリング必須"
+        warnings:
+          - "治療域が非常に狭い。腎機能低下で蓄積リスク"
+      cat:
+        indications: []
+        warnings: []
+    safety_flags:
+      cat_contraindicated: false
+      narrow_therapeutic_index: true
+    references: []
+
+  - name: ペルメトリン
+    aliases: [permethrin]
+    category: antiparasitic
+    source: user_registered
+    species_data:
+      dog:
+        indications:
+          - indication: 外部寄生虫
+            dose_mg_per_kg: "65"
+            frequency: 月1回
+            route: topical
+            duration: "継続"
+            notes: ""
+        warnings: []
+      cat:
+        indications: []
+        warnings:
+          - "猫に絶対使用不可。致死的中毒を引き起こす"
+    safety_flags:
+      cat_contraindicated: true
+      narrow_therapeutic_index: false
+    references: []

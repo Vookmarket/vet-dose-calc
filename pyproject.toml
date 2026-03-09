@@ -1,0 +1,53 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vet-dose-calc"
+version = "1.0.0"
+description = "獣医臨床向け薬用量クイック計算ツール。ルールベース計算とAI薬剤提案の二層アーキテクチャ。"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+authors = [
+    { name = "bookma", email = "vookmarket@example.com" },
+]
+keywords = ["veterinary", "dosage", "calculator", "gemini", "cli"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Healthcare Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+dependencies = [
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+vet-dose-calc = "vet_dose_calc.tool:main"
+
+[project.urls]
+Homepage = "https://github.com/Vookmarket/vet-dose-calc"
+Repository = "https://github.com/Vookmarket/vet-dose-calc"
+Issues = "https://github.com/Vookmarket/vet-dose-calc/issues"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "vet_dose_calc/",
+    "README.md",
+    "LICENSE",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["vet_dose_calc"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
