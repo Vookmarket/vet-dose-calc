@@ -28,16 +28,53 @@ class ProductAmount:
 
 
 def parse_dose_range(dose_str: str) -> tuple[float, float]:
-    """'12.5-25' → (12.5, 25.0), '1' → (1.0, 1.0)"""
-    dose_str = str(dose_str).strip()
-    match = re.match(r"^([\d.]+)\s*-\s*([\d.]+)$", dose_str)
+    """用量文字列を (min, max) のタプルに変換する。
+
+    対応形式:
+      - '12.5-25' → (12.5, 25.0)   標準範囲
+      - '1' → (1.0, 1.0)           単一値
+      - '10~25' → (10.0, 25.0)     チルダ区切り
+      - '10-25mg/kg' → (10.0, 25.0) 単位付き
+      - '25, 10-15' → (10.0, 25.0)  カンマ区切り（全数値のmin-max）
+    """
+    s = str(dose_str).strip()
+
+    # 単位除去（mg/kg, mg, kg 等の末尾）
+    s = re.sub(r"\s*(mg/kg|mg|kg)\s*$", "", s, flags=re.IGNORECASE)
+
+    # チルダ → ハイフン（全角含む）
+    s = s.replace("~", "-").replace("〜", "-").replace("～", "-")
+
+    # カンマ区切り: 全数値を抽出してmin-max
+    if "," in s:
+        nums = [float(m) for m in re.findall(r"[\d.]+", s)]
+        if nums:
+            return min(nums), max(nums)
+        raise ValueError(
+            f"用量をパースできません（数値が見つかりません）: '{dose_str}'"
+        )
+
+    # 標準範囲形式: "12.5-25" or "12.5 - 25"
+    match = re.match(r"^([\d.]+)\s*-\s*([\d.]+)$", s)
     if match:
-        return float(match.group(1)), float(match.group(2))
+        lo, hi = float(match.group(1)), float(match.group(2))
+        return (lo, hi) if lo <= hi else (hi, lo)
+
+    # 単一数値
     try:
-        v = float(dose_str)
+        v = float(s)
         return v, v
     except ValueError:
-        raise ValueError(f"用量をパースできません: '{dose_str}'")
+        pass
+
+    # 最後の手段: 文字列中の全数値を抽出
+    nums = [float(m) for m in re.findall(r"[\d.]+", s)]
+    if nums:
+        return min(nums), max(nums)
+
+    raise ValueError(
+        f"用量をパースできません（数値が見つかりません）: '{dose_str}'"
+    )
 
 
 def calculate_dose(weight_kg: float, dose_mg_per_kg: str, indication: str = "",
