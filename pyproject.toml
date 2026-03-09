@@ -10,7 +10,7 @@ readme = "README.md"
 license = "MIT"
 requires-python = ">=3.12"
 authors = [
-    { name = "bookma", email = "vookmarket@example.com" },
+    { name = "bookma", email = "investerinary.hon@gmail.com" },
 ]
 keywords = ["veterinary", "dosage", "calculator", "gemini", "cli"]
 classifiers = [
